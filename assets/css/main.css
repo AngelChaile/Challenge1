@@ -13,9 +13,6 @@
   --AboutRojoOscuro: #333;
   --AboutGrisClaro: rgba(255, 255, 255, 0.25);
   --AboutGrisMasClaro: rgba(255, 255, 255, 0.5);
-
-
-
 }
 
 /* Shared */
@@ -65,6 +62,13 @@
   
   /* Sections */
   .section {
+    padding: 100rem 0 10rem;
+    text-align: center;
+    
+  }
+
+  /* Sections */
+  .section__brand {
     padding: 100rem 0 10rem;
     text-align: center;
     
@@ -216,8 +220,8 @@
   .features__title-section{
     height: 24px;
     text-align: left;
-    margin-bottom: 3rem;
-    font-size: 30px;
+    margin-bottom: 2rem;
+    font-size: 25px;
     font-family: Roboto-Bold, Calibri, Tahoma, sans-serif;
 
   }
@@ -259,8 +263,15 @@
   
   /* Help */
   .get-started {
-    color: #BBBAC6;
-    background-color: #192023;
+    background-color: var(--white);
+    font-family: Oswald, Calibri, Tahoma, sans-serif;
+  }
+
+  .get-started__heading {
+    color: var(--negroMedio);
+    font-size: 40px;
+    font-family: Roboto-Bold, Calibri, Tahoma, sans-serif;
+    margin-bottom: 3rem;
   }
 
   /* Carousel for Brands */
@@ -451,6 +462,9 @@
     .section {
       padding: 10rem 0 10rem;
     }
+    .section__brand {
+      padding: 3rem 0 2rem;
+    }
     .hero {
       padding: 5rem 0 8rem;
       text-align: left;
@@ -471,6 +485,9 @@
     .section {
       padding: 14rem 0 14rem;
     }
+    .section__brand {
+      padding: 7rem 0 6rem;
+    }
     .hero {
       padding: 10rem 0 27rem;
     }
@@ -485,6 +502,9 @@
   @media (min-width: 1000px) {
     .section {
       padding: 10rem 0 10rem;
+    }
+    .section__brand {
+      padding: 3rem 0 2rem;
     }
     .hero {
       padding: 12rem 0 32rem;
