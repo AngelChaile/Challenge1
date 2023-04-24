@@ -189,6 +189,24 @@
     color: #BBBAC6;
     background-color: #192023;
   }
+
+  /* Carousel for Brands */
+  .carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+    cursor: all-scroll;
+    overflow-x: scroll;    
+  }
+
+  .carrusel img{
+    flex: 1 0 auto; /*para que no se achiquen*/
+    margin: 0 50px;
+    width: 200px;
+    height: 200px;
+  }
+
+
+
   
   /* About */
   .about {
