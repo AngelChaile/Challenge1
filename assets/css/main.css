@@ -191,21 +191,26 @@
   }
 
   /* Carousel for Brands */
-  .carrusel{
+  .carrusel-brands{
     display: flex;
+    width: 1000px;
+    height: 200px;
+    max-width: 100%;
     flex-wrap: nowrap;
-    cursor: all-scroll;
-    overflow-x: scroll;    
+    overflow-x: scroll;
+    overflow-x: auto;
   }
 
-  .carrusel img{
+  .carrusel-brands img{
+    width: 100%;
+    scroll-snap-align: center ;
+    background-color: white;
+    border-radius: 10px;
     flex: 1 0 auto; /*para que no se achiquen*/
     margin: 0 50px;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
-
-
 
   
   /* About */
