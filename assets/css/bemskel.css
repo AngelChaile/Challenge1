@@ -938,7 +938,8 @@ Markup:
 
 .flex-grid > *.flex-grid__col {
   flex-grow: 4;
-  margin-left: 2%; }
+  margin-left: 2%; 
+  margin-right: 2%; }
 
 .flex-grid > *.flex-grid__col--fixed-width {
   flex: 0 0 200px; }

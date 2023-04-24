@@ -12,10 +12,13 @@
   <!-- CSS  -->
   <link rel="stylesheet" href="assets/css/bemskel.css">
   <link rel="stylesheet" href="assets/css/main.css">
+
+  <link rel="stylesheet" href="assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+
 </head>
 
 <body>
-
   <!-- Top Nav -->
   <header class="header header-top">
     <div class="container">
@@ -64,14 +67,9 @@
     </header>
   </header>
 
-  <!-- Main Page Layout -->
-  <div class="section hero">
-    <div class="container">
-          <h4 class="section-heading">Build user interfaces that are easy to customize and scale.
-          </h4>
-          <a class="btn btn--lg btn--success btn--raised" href="http://bemskel.com">Try BEMSkel</a>
-    </div>
-  </div>
+  <!-- Main Carrousel -->
+  <img src="assets/img/carrousel1-min.jpg" alt="">
+
 
   <!-- Features Section -->
   <section class="features">
@@ -81,37 +79,28 @@
           <div class="flex-grid__col">
             <i class="features__title-section"></i>
             <h4 class="features__title-section" aria-hidden="true">
-              Title here
+              📦 Acopio de Materiales
             </h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Nullam lobortis id tortor sit amet porttitor.
-              Morbi vel justo pharetra, ornare arcu a, maximus purus.
-              Aliquam eget ante blandit, posuere mauris quis, efficitur metus. 
+              Sin Vencimiento. Te guardamos los materiales e insumos que hayas adquirido hasta el día que los necesites.
             </p>
           </div>
 
           <div class="flex-grid__col">
             <h4 class="features__title-section" aria-hidden="true">
-              Title here
+              💵 Financiación
             </h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Nullam lobortis id tortor sit amet porttitor.
-              Morbi vel justo pharetra, ornare arcu a, maximus purus.
-              Aliquam eget ante blandit, posuere mauris quis, efficitur metus. 
+              Contamos con todos los medios de pago, tarjetas de Credito y Debito. Acercate a consultar.
             </p>
           </div>
 
           <div class="flex-grid__col">
             <h4 class="features__title-section" aria-hidden="true">
-              Title here
+              🚚 Entregas a obras
             </h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Nullam lobortis id tortor sit amet porttitor.
-              Morbi vel justo pharetra, ornare arcu a, maximus purus.
-              Aliquam eget ante blandit, posuere mauris quis, efficitur metus. 
+              Contamos con las herramientas para entregarlo los materiales donde usted nos indique, en tiempo y forma.
             </p>
           </div>
 
@@ -119,50 +108,54 @@
     </div>
   </section>
 
-
+ <!-- Info Sections -->
   <div class="section promotion">
     <div class="container">
-      <h2 class="promotion__title">Not Just Another CSS Framework</h2>
       <div class="row">
-        <div class="col col--3">
-          <h2 class="promotion__icon"> <i class="fa fa-building-o" aria-hidden="true"></i></h2>
-          <h5 class="promotion__heading">Built To Scale</h5>
-          <p class="promotion__description">Written using the BEM naming convention and 7-1 SASS Architecture, BEMSkel provides a solid foundation for building your next large-scale web application or website.</p>
+        <div class="col col--4">
+          <h5 class="promotion__heading">30000+</h5>
+          <p class="promotion__description">VENTAS REALIZADAS</p>
         </div>
-        <div class="col col--3">
-          <h2 class="promotion__icon"><i class="fa fa-sitemap"></i></h2>
-          <h5 class="promotion__heading">Modular</h5>
-          <p class="promotion__description">Includes carefully crafted modules that you can easily customize and extend.</p>
+
+        <div class="col col--4">
+          <h5 class="promotion__heading">4000+</h5>
+          <p class="promotion__description">OBRAS REALIZADAS</p>
         </div>
-        <div class="col col--3">
-          <h2 class="promotion__icon"><i class="fa fa-ban" aria-hidden="true"></i></h2>
-          <h5 class="promotion__heading">No Bloat</h5>
-          <p class="promotion__description">Unlike popular CSS frameworks, BEMSkel only includes the most essential features and basic styles, and letting you to customize and extend without too much overriding existing styles.</p>
+
+        <div class="col col--4">
+          <h5 class="promotion__heading">7000+</h5>
+          <p class="promotion__description">CLIENTES SATISFECHOS</p>
         </div>
-        <div class="col col--3">
-          <h2 class="promotion__icon"><i class="fa fa-eye" aria-hidden="true"></i></h2>
-          <h5 class="promotion__heading">Open Source</h5>
-          <p class="promotion__description">BEMSkel is released under the MIT license. Do whatever the hell you want with it.</p>
-        </div>
+
       </div>
     </div>
   </div>
 
-  <div class="section get-started">
+  <!--Carousel for Brands-->
+  <div class="section__brand get-started">
     <div class="container">
-      <h3 class="section-heading">Getting Started</h3>
-      <p class="section-description">BEMSkel provides a solid foundation to build apps and websites with scalability and modularity in mind. To learn more, just visit the documentation.</p>
-      <a class="btn btn--lg btn-outline--info" href="http://getbemskel.com">View Docs</a>
+      <h3 class="get-started__heading">Trabajamos con marcas lideres</h3>
+      <div class="owl-carousel owl-carousel-brand owl-lazy owl-theme">
+        <img class="owl-lazy" data-src="assets/img/brand1.png" alt="Alberdi">
+        <img class="owl-lazy" data-src="assets/img/brand2.png" alt="ferrum">
+        <img class="owl-lazy" data-src="assets/img/brand3.png" alt="Ternium">
+        <img class="owl-lazy" data-src="assets/img/brand4.png" alt="Sinteplast">
+        <img class="owl-lazy" data-src="assets/img/brand5.png" alt="weber">
+        <img class="owl-lazy" data-src="assets/img/brand6.png" alt="Ceramicas San Lorenzo">
+        <img class="owl-lazy" data-src="assets/img/brand7.png" alt="Lame Negra">
+        <img class="owl-lazy" data-src="assets/img/brand8.png" alt="Barbieri">
+        <img class="owl-lazy" data-src="assets/img/brand9.png" alt="Eternit">
+        <img class="owl-lazy" data-src="assets/img/brand10.png" alt="VASA">
+        <img class="owl-lazy" data-src="assets/img/brand11.png" alt="SICA">
+        <img class="owl-lazy" data-src="assets/img/brand12.png" alt="megaflex">
+        <img class="owl-lazy" data-src="assets/img/brand13.png" alt="BLACK & DECKER">
+        <img class="owl-lazy" data-src="assets/img/brand14.png" alt="DeWalt">
+        <img class="owl-lazy" data-src="assets/img/brand15.png" alt="Stanley">
+        <img class="owl-lazy" data-src="assets/img/brand16.png" alt="Tersuave">
+    </div>
     </div>
   </div>
-
-
-  <div class="section about">
-    <div class="container">
-      <h3 class="section-heading">About</h3>
-      <p class="section-description">BEMSkel was initially based on <a href="http://getskeleton.com">Skeleton boilerplate</a> but was rewritten using the BEM naming convention and added with new useful features for building component-based applications. As I was building React applications, I needed a CSS framework that will complement the component-based nature of React, and hence, BEMSkel was created.</p>
-    </div>
-  </div>
+  <!--Fin Carousel for brands-->
 
   <!-- Footer -->
   <footer class="footer">
@@ -202,6 +195,10 @@
       </div>
     </div>
   </footer>
+
+  <script src="assets/jquery/jquery-3.6.4.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/owl.config.js"></script>
 
 </body>
 </html>
