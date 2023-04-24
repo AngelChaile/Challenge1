@@ -185,7 +185,12 @@
     color: #222;
     text-decoration: none;
     font-size: 16px;
+  }
 
+  .header__nav-link-selected {
+    color: var(--orange);
+    text-decoration: none;
+    font-size: 16px;
   }
     
   /* Hero */
@@ -203,7 +208,7 @@
   
   /* Features */
   .features {
-    background-color: #fff;
+    background-color: var(--white);
     color: #222;
     padding: 6rem 0 6rem;
     font-family: Roboto, Calibri, Tahoma, sans-serif;
@@ -236,7 +241,7 @@
   .promotion {
     background: url("/assets/img/stats.jpg");
     background-size: cover;
-    color: #fff;
+    color: var(--white);
     padding: 6rem 5 6rem;
   }
   
@@ -562,7 +567,7 @@
   .form__button {
     padding: 10px 20px;
     background-color: #007bff;
-    color: #fff;
+    color: var(--white);
     border: none;
     border-radius: 5px;
     cursor: pointer;
