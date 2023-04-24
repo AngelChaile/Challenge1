@@ -64,16 +64,43 @@
     </header>
   </header>
 
-  <!-- Main Page Layout -->
   <div class="section hero">
     <div class="container">
-          <h4 class="section-heading">Inserte formulario y Google Maps acá
-          </h4>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Contáctenos</h4>
+          <form class="form" action="email.php" method="post">
+            <div class="form__group">
+              <label for="nombre" class="form__label">Nombre</label>
+              <input type="text" id="nombre" name="nombre" class="form__input" required>
+            </div>
+            <div class="form__group">
+              <label for="apellido" class="form__label">Apellido</label>
+              <input type="text" id="apellido" name="apellido" class="form__input" required>
+            </div>
+            <div class="form__group">
+              <label for="correo" class="form__label">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" class="form__input" required>
+            </div>
+            <div class="form__group">
+              <label for="asunto" class="form__label">Asunto</label>
+              <input type="text" id="asunto" name="asunto" class="form__input" required>
+            </div>
+            <div class="form__group">
+              <label for="mensaje" class="form__label">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" class="form__input form__input--textarea" required></textarea>
+            </div>
+            <button type="submit" class="form__button">Enviar</button>
+          </form>
+        </div>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.519727997524!2d-58.68902272463324!3d-34.69206896216888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc0f6d73784a3%3A0x5f1d85afc4bdf469!2sLibertad!5e0!3m2!1ses!2sar!4v1682289376664!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+      </div>
     </div>
   </div>
-
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.519727997524!2d-58.68902272463324!3d-34.69206896216888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc0f6d73784a3%3A0x5f1d85afc4bdf469!2sLibertad!5e0!3m2!1ses!2sar!4v1682289376664!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+  
 
   <!-- Footer -->
   <footer class="footer">
