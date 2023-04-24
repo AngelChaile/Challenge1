@@ -148,14 +148,28 @@
   
   /* Features */
   .features {
-    background-color: #192023;
-    color: #BBBAC6;
+    background-color: #f3f3f3;
+    color: #222;
     padding: 6rem 0 6rem;
+    font-family: sans-serif;
   }
   
   .features__title {
     text-align: center;
     margin-bottom: 4rem;
+    
+  }
+
+  .features__title-section{
+    height: 27px;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .features__title-section img {
+    height: 27px;
+    margin-right: 0;
+
   }
   
   /* Promotion */
