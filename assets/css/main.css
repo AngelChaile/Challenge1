@@ -1,3 +1,23 @@
+:root{
+  --white: #fff;
+  --negroOscuro: rgba(0, 0, 0, 0.2);
+  --orange: orange;
+  --negroMedOscuro: #111;
+  --negroMedio: #222;
+  --featuresOscuro: #192023;
+  --grisLila: #BBBAC6;
+  --PromAzulOscuro: rgba(25, 32, 35, 0.85);
+  --PromVerdeOscuro: rgba(0, 119, 76, 0.75);
+  --grisClaro: #ddd;
+  --HelpAzulOscuro: #192023;
+  --AboutRojoOscuro: #333;
+  --AboutGrisClaro: rgba(255, 255, 255, 0.25);
+  --AboutGrisMasClaro: rgba(255, 255, 255, 0.5);
+
+
+
+}
+
 /* Shared */
 
   /* Fonts */
@@ -242,6 +262,10 @@
     color: #BBBAC6;
     background-color: #192023;
   }
+
+  /* Carousel for Brands */
+  
+
   
   /* About */
   .about {
