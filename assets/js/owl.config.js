@@ -5,6 +5,9 @@ $('.owl-carousel-brand').owlCarousel({
     nav:false,
     touchDrag: true,
     mouseDrag: true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplaySpeed:1000,
     lazyLoad:true,
     dots:false,
     responsive:{
