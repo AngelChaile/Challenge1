@@ -2,14 +2,14 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    autoplay: true,
+    autoplay: false,
     speed: 900,
     allowTouchMove: false,
     
     // Autoplay options
-    autoplay: {
+   /*  autoplay: {
         delay: 5000,
-      },
+      }, */
 
     // Navigation arrows
     navigation: {

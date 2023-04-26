@@ -27,7 +27,7 @@
     font-weight: 600;
   }
 
-  /* Statistics font - Numbers */
+  /* Statistics font - Normal words */
   @font-face {
     font-family: Roboto;
     src: url('/assets/fonts/Roboto-Medium.ttf') format('woff2');
@@ -35,7 +35,7 @@
     font-weight: 600;
   }
 
-  /* Statistics font - Numbers */
+  /* Statistics font - Titles */
   @font-face {
     font-family: Roboto-Bold;
     src: url('/assets/fonts/Roboto-Bold.ttf') format('woff2');
@@ -46,6 +46,7 @@
 *
 {
   font-family: Roboto, Calibri, Tahoma, sans-serif;
+  font-size: 1em;
 }
   
 .list-inline {
@@ -160,7 +161,7 @@
   /* Bottom Header */
   .header__logo {
     color: #222;
-    font-size: 16px;
+    font-size: 1em;
     max-width: 200px;
   }
   
@@ -184,13 +185,13 @@
   .header__nav-link {
     color: #222;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1em;
   }
 
   .header__nav-link-selected {
     color: var(--orange);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1em;
   }
     
   /* Hero */
@@ -209,7 +210,6 @@
     color: #222;
     padding: 6rem 0 6rem;
     font-family: Roboto, Calibri, Tahoma, sans-serif;
-    font-size: 16px;
   }
   
   .features__title {
@@ -223,7 +223,7 @@
     height: 24px;
     text-align: left;
     margin-bottom: 2rem;
-    font-size: 25px;
+    font-size: 1.35em;
     font-family: Roboto-Bold, Calibri, Tahoma, sans-serif;
 
   }
@@ -409,7 +409,7 @@
     
     .footer__social-menu-item a {
     color: #666;
-    font-size: 16px;
+    font-size: 1em;
     text-decoration: none;
     transition: color 0.3s ease;
     }
