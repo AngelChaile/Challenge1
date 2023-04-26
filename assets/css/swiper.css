@@ -1,0 +1,86 @@
+/* TODO: Fix missaligned arrows and swipe__content (ALMOST DONE)
+         Fix responsiveness of image when narrowing view */
+
+/* ------------------------------------- */
+/* Fixes needed to show swiper correctly */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+/* Center content of swiper */
+.swiper-slide {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/* ------------------------------------- */
+
+/* Modify arrow and button color  */
+.swiper-button-prev, 
+.swiper-button-next { 
+    color: white;
+}
+
+button {
+    color: white;
+}
+
+/* Create content inside slides */
+.swiper-slide__container {
+    /* !!! FIX THIS HARDCODING !!!! */
+    height: 75.1%;
+    /* !!! FIX THIS HARDCODING !!!! */
+    /* width: 100%; */
+    
+}
+
+.swiper-slide__content {
+    background-color: #00000051;
+    border-radius: 0.4em;
+    padding: 1em;
+}
+
+.swiper-slide__image1,
+.swiper-slide__image2,
+.swiper-slide__image3 {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 50%, 50%;
+}
+
+.swiper-slide__image1 {
+    background-image: url("../img/carrousel1-small.jpg");
+}
+  
+.swiper-slide__image2 {
+    background-image: url("../img/carrousel4-small.jpg");
+}
+  
+.swiper-slide__image3 {
+    background-image: url("../img/carrousel3-small.jpg");
+}
