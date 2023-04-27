@@ -213,7 +213,7 @@
   /* Hero */
   .hero {
     background-position: top left;
-    --webkit-background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     color: #222;
