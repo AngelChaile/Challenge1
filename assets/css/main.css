@@ -43,6 +43,7 @@
     font-weight: normal;
   }
 
+  /* Default font size (16px) and font family */
 *
 {
   font-family: Roboto, Calibri, Tahoma, sans-serif;
@@ -161,7 +162,6 @@
   /* Bottom Header */
   .header__logo {
     color: #222;
-    font-size: 1em;
     max-width: 200px;
   }
   
@@ -184,14 +184,25 @@
   
   .header__nav-link {
     color: #222;
+    text-decoration: none; 
+    transition: ease-in-out 0.2s
+  }
+
+  .header__nav-link:hover {
+    color: orange;
     text-decoration: none;
-    font-size: 1em;
   }
 
   .header__nav-link-selected {
     color: var(--orange);
+    font-weight: 800;
     text-decoration: none;
-    font-size: 1em;
+    transition: ease-in-out 0.2s
+  }
+
+  .header__nav-link-selected:hover {
+    color: rgb(255, 200, 0);
+    text-decoration: none;
   }
     
   /* Hero */
@@ -201,7 +212,6 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     color: #222;
-    
   }
   
   /* Features */
@@ -252,13 +262,13 @@
   }
   
   .promotion__heading {
-    font-size: 70px;
+    font-size: 5em;
     font-family: Oswald, Calibri, Tahoma, sans-serif;
     margin-bottom: 0rem;
   }
   
   .promotion__description {
-    font-size: 25px;
+    font-size: 1.5em;
     font-family: Oswald, Calibri, Tahoma, sans-serif;
     
   }
@@ -409,7 +419,6 @@
     
     .footer__social-menu-item a {
     color: #666;
-    font-size: 1em;
     text-decoration: none;
     transition: color 0.3s ease;
     }
