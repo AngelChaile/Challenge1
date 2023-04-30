@@ -7,6 +7,7 @@ const swiper = new Swiper('.swiper', {
     allowTouchMove: false,
     
     // Autoplay options
+    // Uncomment for production
    /*  autoplay: {
         delay: 5000,
       }, */
@@ -16,6 +17,4 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
-    
   });
