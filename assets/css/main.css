@@ -49,17 +49,22 @@
   font-size: 1em;
 }
 
+/* White border on mobile devices fix */
+html,body{
+  overflow-x: hidden;
+}
+
 .button {
   color: black;
   font-family: Roboto;
   font-weight: 500;
   letter-spacing: 0px;
   font-size: 1em;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
   border: 0;
   background-color: rgb(255, 165, 0);
-  transition: ease-in-out 0,1s;
+  transition: ease-in-out 0.1s;
 }
 
 .button:hover {
@@ -110,6 +115,11 @@
   .section-heading,
   .section-description {
     margin-bottom: 1.2rem;
+  }
+
+   .section__promotion {
+    padding: 10rem 0 10rem;
+    text-align: center;
   }
   
    /* General Header */
@@ -263,13 +273,14 @@
     margin-right: 0.5%;
   }
 
-  .flex-grid__col {
+  .features__flex-grid--border {
     padding: 1% 3% 1% 3%;
     border: 1px solid #eee;
     border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
   }
+
 
   .features {
     background-color: var(--white);
@@ -306,12 +317,14 @@
   
   /* Promotion */
   .promotion {
-    background: url("/assets/img/stats.jpg");
+    background: url("/assets/img/statsHiRes.jpg");
+    background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     color: var(--white);
     padding: 6rem 5 6rem;
   }
-  
+
   .promotion__title {
     margin-bottom: 5rem;
   }
@@ -348,11 +361,8 @@
 
   /* Carousel for Brands */
   
-
-  
   /* About */
   .about {
-    background-image: url("../images/grass.jpg");
     background-size: cover;
     background-position: top left;
     background-repeat: no-repeat;
@@ -528,7 +538,6 @@
     }
   
   
-  /* Bigger than 360 */
   @media (min-width: 360px) {
     .section {
       padding: 10rem 0 10rem;
@@ -568,15 +577,23 @@
     } */
   }
 
+ @media (max-width: 600px) {
+  .container {
+    width: 75%;
+  }
+  .flex-grid__col {
+    margin-top: 3%;
+    padding: 1% 10% 2% 10%;
+  }
+  
+  .section__promotion {
+    padding: 3rem 0 3rem;
+  }
+  
+}
 
   /* Mobile navbar */
  @media (max-width: 600px) {
-    .container {
-      width: 75%;
-    }
-    .flex-grid__col {
-      margin-top: 5%;
-    }
     .header__top,
     .header__bottom {
       display: block;
@@ -612,9 +629,6 @@
       padding-top: unset;
       padding-bottom: unset;
     }
-    .flex-grid__col {
-      padding: 1% 10% 2% 10%;
-    }
   /*   .header__nav-list li {
       display: none;
     }
@@ -629,7 +643,6 @@
     } */
   }
 
-   /* Bigger than 750 */
    @media (min-width: 600px) {
     .container {
       width: 95%;
@@ -665,6 +678,8 @@
     .header__nav-link-selected:hover {
       font-size: 0.8em;
     }
+
+    
   /*   .header__nav-list li {
       display: flex;
     }
@@ -673,7 +688,6 @@
     } */
   }
 
-  /* Bigger than 750 */
   @media (min-width: 768px) {
     .container {
       width: 95%;
@@ -684,7 +698,7 @@
     .hero-heading {
       font-size: 2.6rem;
     }
-    .section {
+    .section  {
       padding: 14rem 0 1rem;
     }
     .section__brand {
@@ -715,7 +729,20 @@
     } */
   }
   
-  /* Bigger than 1000 */
+  @media (max-width: 810px) {
+    .section__promotion .col {
+      margin-left: unset;
+    }
+    
+    .promotion__heading {
+      font-size: 3.5em;
+    }
+
+    .promotion__description {
+      font-size: 1.2em;
+    }
+  }
+
   @media (min-width: 960px) {
     .section {
       padding: 10rem 0 10rem;
@@ -737,8 +764,39 @@
     .header__nav-link-selected:hover {
       font-size: 1em;
     }
-   /* 1 */
   }
+
+  @media (min-width: 960px) {
+    .section {
+      padding: 10rem 0 10rem;
+    }
+    .section__brand {
+      padding: 3rem 0 2rem;
+    }
+    .hero {
+      padding: 0rem 0 0rem;
+    }
+    .hero-heading {
+      font-size: 3.0rem;
+    }
+    .header__nav {
+      display: flex;
+    }
+    .header__nav-link,
+    .header__nav-link-selected,
+    .header__nav-link-selected:hover {
+      font-size: 1em;
+    }
+  }
+  /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+  @media only screen and (max-device-width: 1366px) {
+    .promotion {
+      background-attachment: scroll;
+      background: url("/assets/img/stats.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+  } 
 
   /* Contact-us styles */
 

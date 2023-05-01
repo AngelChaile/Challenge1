@@ -8,9 +8,9 @@ const swiper = new Swiper('.swiper', {
     
     // Autoplay options
     // Uncomment for production
-   /*  autoplay: {
+    autoplay: {
         delay: 5000,
-      }, */
+      },
 
     // Navigation arrows
     navigation: {

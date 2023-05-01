@@ -43,12 +43,18 @@ body {
 .swiper-button-prev, 
 .swiper-button-next { 
     color: white;
+    transition: ease-in-out 0.15s;
+}
+
+.swiper-button-prev:hover, 
+.swiper-button-next:hover {
+    color: orange;
+    
 }
 
 /* Create content inside slides */
 .swiper-slide__container {
-    /* Hardcoded value, will work for now */
-    height: 75.1%;
+    height: 76%;
 }
 
 .swiper-slide__content {
