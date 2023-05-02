@@ -1,6 +1,12 @@
 // OPTIONS
 // Declared set of options for every element
 
+// Default options
+ScrollReveal({ 
+   desktop: true,
+   mobile: false,
+});
+
 // Main Carrousel
 const swiperMainSlideOptions = [
    {
