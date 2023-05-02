@@ -50,8 +50,13 @@
 }
 
 /* White border on mobile devices fix */
-html,body{
-  overflow-x: hidden;
+/* Media query for scrollReveal compatibility */
+@media (max-width: 400px) {
+  html, body {
+    height: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+  }
 }
 
 .button {

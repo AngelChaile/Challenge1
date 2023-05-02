@@ -21,6 +21,7 @@ body {
 .swiper-slide {
     color: rgb(234, 234, 234);
     background: #fff;
+    overflow: auto;
 
     /* Center slide text vertically */
     display: -webkit-box;

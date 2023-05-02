@@ -73,8 +73,8 @@
     <div class="swiper">
       <div class="swiper-wrapper">
 
-        <div class="swiper-slide swiper-slide__image1">
-          <div class="swiper-slide__content">
+        <div class="swiper-slide swiper-slide__image1" id="swiper-main__container-1">
+          <div class="swiper-slide__content" id="swiper-main__slide-1">
               <div class="swiper-slide__content-title">
                 <p>Todo lo que necesitas en un solo lugar
               </div>
@@ -89,8 +89,8 @@
           </div>
         </div>
 
-        <div class="swiper-slide swiper-slide__image2">
-          <div class="swiper-slide__content">
+        <div class="swiper-slide swiper-slide__image2" id="swiper-main__container-2">
+          <div class="swiper-slide__content" id="swiper-main__slide-2">
             <div class="swiper-slide__content-title">
               <p>Productos de calidad superior</p>
             </div>
@@ -105,8 +105,8 @@
           </div>
         </div>
 
-        <div class="swiper-slide swiper-slide__image3">
-          <div class="swiper-slide__content">
+        <div class="swiper-slide swiper-slide__image3" id="swiper-main__container-3">
+          <div class="swiper-slide__content" id="swiper-main__slide-3">
             <div class="swiper-slide__content-title">
               <p>Confía en nosotros para construir tus sueños</p>
             </div>
@@ -130,12 +130,12 @@
   <!-- Features Section -->
   <section class="features">
     <div class="container container--lg">
-      <h2 class="features__title">Confia en nosotros</h2>
+      <h2 class="features__title" id="features__title">Confia en nosotros</h2>
         <div class="flex-grid flex-grid--lg">
           
-          <div class="flex-grid__col features__flex-grid--border">
+          <div class="flex-grid__col features__flex-grid--border" id="features__box">
             <i class="features__icon fa-sharp fa-solid fa-boxes-stacked fa-5x hvr-float"></i>
-            <h4 class="features__title-section" aria-hidden="true">
+            <h4 class="features__title-section">
               Acopio de Materiales
             </h4>
             <p class="features__info">
@@ -143,9 +143,9 @@
             </p>
           </div>
     
-          <div class="flex-grid__col features__flex-grid--border">
+          <div class="flex-grid__col features__flex-grid--border" id="features__box">
             <i class="features__icon fa-regular fa-credit-card fa-5x hvr-float"></i>
-            <h4 class="features__title-section" aria-hidden="true">
+            <h4 class="features__title-section">
               Financiación
             </h4>
             <p class="features__info">
@@ -154,9 +154,9 @@
             </p>
           </div>
   
-          <div class="flex-grid__col features__flex-grid--border">
+          <div class="flex-grid__col features__flex-grid--border" id="features__box">
             <i class="features__icon fa-solid fa-truck-fast fa-5x hvr-float"></i>
-            <h4 class="features__title-section" aria-hidden="true">
+            <h4 class="features__title-section">
               Entregas a obras
             </h4>
             <p class="features__info">
@@ -172,17 +172,17 @@
   <div class="section__promotion promotion">
     <div class="container">
       <div class="flex-grid flex-grid--lg">
-        <div class="flex-grid__col ">
+        <div class="flex-grid__col" id="promotion__info">
           <h5 class="promotion__heading">30000+</h5>
           <p class="promotion__description">VENTAS REALIZADAS</p>
         </div>
 
-        <div class="flex-grid__col sus">
+        <div class="flex-grid__col" id="promotion__info">
           <h5 class="promotion__heading">4000+</h5>
           <p class="promotion__description">OBRAS REALIZADAS</p>
         </div>
 
-        <div class="flex-grid__col sus">
+        <div class="flex-grid__col" id="promotion__info">
           <h5 class="promotion__heading">7000+</h5>
           <p class="promotion__description">CLIENTES SATISFECHOS</p>
         </div>
@@ -193,8 +193,8 @@
   <!-- Carousel for Brands -->
   <div class="section__brand get-started">
     <div class="container">
-      <h3 class="get-started__heading">Trabajamos con marcas lideres</h3>
-      <div class="owl-carousel owl-carousel-brand owl-lazy owl-theme">
+      <h3 class="get-started__heading" id="swiper-brand__title">Trabajamos con marcas lideres</h3>
+      <div class="owl-carousel owl-carousel-brand owl-lazy owl-theme" id="swiper-brand__slider">
         <img class="owl-lazy" data-src="assets/img/brand1.png" alt="Alberdi">
         <img class="owl-lazy" data-src="assets/img/brand2.png" alt="ferrum">
         <img class="owl-lazy" data-src="assets/img/brand3.png" alt="Ternium">
@@ -258,6 +258,12 @@
   <!-- Carrousel library -->
   <script src="assets/js/swiperjs/swiper.min.js"></script>
   <script type="module" src="assets/js/swiperjs/swiper.config.js"></script>
+
+  <!-- <script src="assets/js/scroll.test.js"></script> -->
+
+  <!--  id="promotion__info"revealing library -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="module" src="assets/js/scrollReveal/scrollReveal.config.js"></script>
   <!-- Font Awesome free icons -->
   <script src="https://kit.fontawesome.com/8e67863097.js" crossorigin="anonymous"></script>
 </body>
