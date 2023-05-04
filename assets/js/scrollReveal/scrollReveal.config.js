@@ -72,13 +72,15 @@ const swiperBrandOptions = {
    origin: 'top',
    distance: '10px',
    interval: 200,
-   viewFactor: 0.6,
+   viewFactor: 1.0,
+   viewOffset: {
+      bottom: 100
+   }
 };
 
 
 // ENABLE SCROLL REVEAL
-// Comment to disable an element animations
-
+// Comment to disable all animations for an element
  ScrollReveal().reveal('#swiper-main__slide-1', swiperMainSlideOptions[0]);
 
  ScrollReveal().reveal('#swiper-main__slide-2', swiperMainSlideOptions[1]);
@@ -93,5 +95,4 @@ const swiperBrandOptions = {
 
  ScrollReveal().reveal('#swiper-brand__title', swiperBrandTitleOptions);
 
- ScrollReveal().reveal('#swiper-brand__slider', swiperBrandOptions);
-
+ ScrollReveal().reveal('#swiper-brand__image', swiperBrandOptions);
