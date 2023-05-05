@@ -1,0 +1,21 @@
+Tecnologias usadas:
+
+BEMSkel - Framework basado en Skeleton con elementos en BEM.
+Utilizado en conjunto a una plantilla ofrecida por el framework.
+http://bemskel.com/
+
+Swiperjs - Libreria JavaScript para sliders/carruseles.
+Utilizado en carrousel principal.
+https://swiperjs.com/
+
+Owl.Js - Libreria jQuery para sliders/carruseles.
+Utilizado en carrousel marcas por cuestiones de tiempo.
+https://owlcarousel2.github.io/OwlCarousel2/
+
+ScrollReveal.js - Libreria JavaScript para animar elementos cuando salen y entran a la vista.
+Utilizado en todo Home.
+https://scrollrevealjs.org/
+
+Hover.css - Libreria CSS para animaciones de elementos en general.
+Utilizado en iconos de las secciones de informacion.
+http://ianlunn.github.io/Hover/
