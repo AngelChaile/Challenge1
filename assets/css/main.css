@@ -70,6 +70,7 @@
   border: 0;
   background-color: rgb(255, 165, 0);
   transition: ease-in-out 0.1s;
+  margin-right: 2em;
 }
 
 .button:hover {
@@ -775,7 +776,7 @@
 
   @media (min-width: 960px) {
     .section {
-      padding: 10rem 0 10rem;
+      padding: 10rem 0 4rem;
     }
     .section__brand {
       padding: 3rem 0 2rem;
@@ -850,6 +851,7 @@
   .form__button:hover {
     background-color: #0062cc;
   }
+
 
   /* Location map */
   .map-container {
