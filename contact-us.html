@@ -76,23 +76,29 @@
             <form class="form" action="email.php" method="post">
               <div class="form__group">
                 <label for="nombre" class="form__label">Nombre</label>
-                <input type="text" id="nombre" name="nombre" class="form__input" required>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" class="form__input" required>
               </div>
               <div class="form__group">
-                <label for="apellido" class="form__label">Apellido</label>
-                <input type="text" id="apellido" name="apellido" class="form__input" required>
+                <label for="telefono" class="form__label">Telefono</label>
+                <input type="number" id="telefono" name="telefono" placeholder="Ingrese su número de telefono" class="form__input" required>
               </div>
               <div class="form__group">
                 <label for="correo" class="form__label">Correo electrónico</label>
-                <input type="email" id="correo" name="correo" class="form__input" required>
+                <input type="email" id="correo" name="correo" placeholder="Ingrese su Correo" class="form__input" required>
               </div>
-              <div class="form__group">
+              <!--   <div class="form__group">
                 <label for="asunto" class="form__label">Asunto</label>
                 <input type="text" id="asunto" name="asunto" class="form__input" required>
+              </div> -->
+              <div class="form__group">
+                <label for="persona" class="form__label">Persona</label>
+                <input type="radio" name="tipo" value="persona">
+                <label for="empresa" class="form__label">Empresa</label>
+                <input type="radio" name="tipo" value="empresa">
               </div>
               <div class="form__group">
                 <label for="mensaje" class="form__label">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" class="form__input form__input--textarea" required></textarea>
+                <textarea id="mensaje" name="mensaje" placeholder="Escriba aqui su mensaje" class="form__input form__input--textarea" required></textarea>
               </div>
               <button type="submit" class="button">Enviar</button>
               <input class="button" type="reset" value="Borrar">
