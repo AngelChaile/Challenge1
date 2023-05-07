@@ -91,6 +91,14 @@
                 <input type="text" id="asunto" name="asunto" class="form__input" required>
               </div>
               <div class="form__group">
+                <label for="persona" class="form__label">Tipo de persona</label>
+                <select name="persona" id="persona" class="form__input" required>
+                  <option value="" selected disabled>Seleccione</option>
+                  <option value="persona">Persona</option>
+                  <option value="empresa">Empresa</option>
+                </select>
+              </div>
+              <div class="form__group">
                 <label for="mensaje" class="form__label">Mensaje</label>
                 <textarea id="mensaje" name="mensaje" class="form__input form__input--textarea" required></textarea>
               </div>
