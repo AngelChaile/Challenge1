@@ -19,7 +19,7 @@ body {
 
 /* Center content of swiper */
 .swiper-slide {
-    color: rgb(234, 234, 234);
+    color: var(--color-text-white);
     overflow: auto;
 
     /* Center slide text vertically */
@@ -43,13 +43,13 @@ body {
 /* Modify arrow and button color  */
 .swiper-button-prev, 
 .swiper-button-next { 
-    color: white;
+    color: var(--color-icon-white);
     transition: ease-in-out 0.15s;
 }
 
 .swiper-button-prev:hover, 
 .swiper-button-next:hover {
-    color: orange;
+    color: var(--color-primary);
     
 }
 
@@ -59,7 +59,7 @@ body {
 }
 
 .swiper-slide__content {
-    background-color: hsla(0, 0%, 0%, 0.500);
+    background-color: var(--color-transparent-black-50);
     border-radius: 0.4em;
     padding: 1.5em 2em 1.25em 2em;
     margin-left: 12%;
@@ -67,6 +67,7 @@ body {
 }
 
 .swiper-slide__content-title {
+    color: var(--color-text-white);
     font-family: Roboto, Calibri, Tahoma, sans-serif;
     font-size: 1.3em;
     margin: 12px 0px 1px 0px; 
@@ -78,6 +79,7 @@ body {
 }
 
 .swiper-slide__content-description {
+    color: var(--color-text-white);
     font-size: 1em;
     font-weight: 400;
     letter-spacing: 0px;
