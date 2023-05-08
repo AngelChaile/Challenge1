@@ -79,18 +79,18 @@
           <div class="col-md-6">
             <h4>Contáctenos</h4>
 
-            <form action="https://formsubmit.co/angelchaile90@gmail.com" method="POST" >
+            <form action="https://formsubmit.co/sanchez.franco.alum@gmail.com" method="POST" >
               <div class="form__group">
                 <label for="nombre" class="form__label">Nombre</label>
-                <input type="text" id="nombre" name="nombre" class="form__input" placeholder="Ingrese su Nombre*" required>
+                <input type="text" id="nombre" name="nombre" class="form__input" placeholder="Ingrese su Nombre*" pattern="^[a-zA-Z ]*$" required>
               </div>
               <div class="form__group">
                 <label for="correo" class="form__label">Correo electrónico</label>
-                <input type="email" id="correo" name="correo" class="form__input" placeholder="Ingrese su Correo*" required>
+                <input type="email" id="correo" name="correo" class="form__input" placeholder="Ingrese su Correo*" pattern="^[a-zA-Z1-9_.@]*$" required>
               </div>
               <div class="form__group">
                 <label for="telefono" class="form__label">Telefono</label>
-                <input type="tel" name="telefono" class="form__input" id="telefono" placeholder="(Código de área) Número" required>
+                <input type="tel" name="telefono" class="form__input" id="telefono" placeholder="(Código de área) Número" pattern="^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" required>
               </div>
               <div class="form__group">
                 <label for="persona" class="form__label">Tipo de persona</label>
