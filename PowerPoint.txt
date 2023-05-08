@@ -19,3 +19,18 @@ https://scrollrevealjs.org/
 Hover.css - Libreria CSS para animaciones de elementos en general.
 Utilizado en iconos de las secciones de informacion.
 http://ianlunn.github.io/Hover/
+
+Font Awesome - Herramienta que ofrece iconos .svg gratis
+Utilizado en todos los iconos de ambas páginas
+https://fontawesome.com/
+
+Recursos utilizados:
+
+Unsplash.com - Página que ofrece imagenes gratis sin copyright
+Utilizado en el carrousel principal y contactos
+https://unsplash.com/
+
+FormSubmit.co - Página que ofrece una API para enviar correo de manera sencilla y rapida
+Utilizado en el formulario para enviar correos
+https://formsubmit.co/
+
