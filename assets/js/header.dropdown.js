@@ -1,11 +1,39 @@
-// get the dropdown button element
+const navListClass = document.querySelector('.header__nav-list');
 const dropdownButton = document.querySelector('.header__nav-dropdown-button');
+const mobileMediaQuery = window.matchMedia('(max-width: 600px)');
 
-// add a click event listener to the dropdown button
-dropdownButton.addEventListener('click', function() {
-  // get the header__nav-list element
-  const navList = document.querySelector('.header__nav-list');
+var toggleFlag = 0;
 
-  // toggle the CSS classes to show/hide the nav list and the dropdown button
-  navList.classList.toggle('header__dropdown-enabled');
+/**
+ * Toggles the 'header__nav-list-show' class on the navList if the mediaQuery increases
+ * more than 600px and resets toggleFlag changes to 1.
+ * 
+ * @param navList Class of the navbar that contains redirect links
+ */
+
+mobileMediaQuery.addEventListener('change', function resetMobileDropdown() 
+{
+  if (!mobileMediaQuery.matches) 
+  {
+    if(toggleFlag == 1) 
+    {
+      navListClass.classList.toggle('header__nav-list-show');
+      toggleFlag--;
+    }
+  }
 });
+
+/**
+ * Changes the visibility of the mobile menu and updates the toggleFlag variable.
+ * 
+ * @param navList Class of the navbar that contains redirect links
+ */
+dropdownButton.addEventListener('click', function toggleMobileDropdown() 
+{
+  navListClass.classList.toggle('header__nav-list-show');
+
+  (toggleFlag == 0) ? toggleFlag++ : toggleFlag--;
+
+});
+
+
