@@ -335,23 +335,15 @@
   }
   
   /* Promotion */
-/*   .promotion {
+  .promotion {
     color: var(--color-text-white);
     background: url("/assets/img/statsHiRes.jpg");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     padding: 6rem 5 6rem;
-  } */
+  }
 
-  .promotion {
-    color: var(--color-text-white);
-    background: url("img/statsHiRes.jpg");
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 6rem 5 6rem;
-}
 
 
   .promotion__title {
