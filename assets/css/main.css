@@ -337,7 +337,7 @@
   /* Promotion */
   .promotion {
     color: var(--color-text-white);
-    background: url("/assets/img/statsHiRes.jpg");
+    background: url("../img/stats.jpg");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -764,7 +764,7 @@
   @media only screen and (max-device-width: 1366px) {
     .promotion {
       background-attachment: scroll;
-      background: url("/assets/img/stats.jpg");
+      background: url("https://pixabay.com/get/gcd1c2a7e8b710b03913516314468b40332fb074399bb9840f0ba83b7369d992ba25800ad65f2eac7f466470c7c152c8878b3894b8c871d976c2ce15e41358646_1280.jpg");
       background-position: center;
       background-size: cover;
     }
