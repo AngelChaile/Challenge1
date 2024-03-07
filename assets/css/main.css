@@ -815,21 +815,3 @@
   .form__button:hover {
     background-color: #0062cc;
   }
-
-  /* Location map */
-  .map-container {
-    /* position: relative;
-    padding-bottom: 56.25%; /* establece una proporción 16:9 para el contenedor */
-   /*  height: 0;
-    overflow: hidden;
-    margin-top: 20px;  *//* estab *//*lece la distancia entre el contenedor del mapa y el elemento anterior ;*/
-
-  }
-  
-  .map-container__inframe {
-   /*  position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; */
-  }
