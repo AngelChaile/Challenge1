@@ -113,14 +113,12 @@
   .section {
     padding: 100rem 0 10rem;
     text-align: center;
-    
   }
 
   /* Sections */
   .section__brand {
     padding: 100rem 0 10rem;
     text-align: center;
-    
   }
   
   .section-heading,
@@ -138,10 +136,6 @@
     box-shadow: 0 2px 4px var(--color-boxshadow-black);
     color: var(--color-text-white);
   }
-
-  /* .header__show .header__nav-list li {
-    display: flex;
-  } */
 
   .header-top {
     background-color: var(--color-primary);
@@ -216,7 +210,6 @@
   .header__nav-dropdown {
     color: var(--color-icon-black);
     display: none;
-    
   }
   
   .header__nav-dropdown-button {
@@ -241,7 +234,6 @@
   .header__nav-list-show {
     display: block !important;
   }
-  
   
   .header__nav-item {
     text-align: center;
@@ -299,7 +291,6 @@
     -moz-border-radius: 5px 5px 5px 5px;
   }
 
-
   .features {
     background-color: var(--color-background-white);
     color: var(--color-text-black);
@@ -330,9 +321,6 @@
     font-size: 1.35em;
   }
 
-  .features__info {
-    /* No styles for now */
-  }
   
   /* Promotion */
   .promotion {
@@ -343,8 +331,6 @@
     background-size: cover;
     padding: 6rem 5 6rem;
   }
-
-
 
   .promotion__title {
     margin-bottom: 5rem;
@@ -363,7 +349,6 @@
   .promotion__description {
     font-size: 1.5em;
     font-family: Oswald, Calibri, Tahoma, sans-serif;
-    
   }
   
   /* Help */
