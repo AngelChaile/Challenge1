@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Productos - LibConstruct</title>
+  <!-- General Metas  -->
+  <meta name="application-name" content="LibConstruct">
+  <meta name="description" content="Catálogo de productos del corralón LibConstruct">
+  <meta name="author" content="ISFT 177">
+  <meta name="keywords" content="Construccion, material, materiales, herramientas, corralon, productos">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <!-- Icon -->
+  <link rel="icon" href="assets/icon/favicon.png">
+  <!-- Main CSS  -->
+  <link rel="stylesheet" href="assets/css/swiperjs/swiper.min.css">
+  <link rel="stylesheet" href="assets/css/bemskel/bemskel.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Font Awesome free icons -->
+  <script defer src="assets/js/font-awesome/font-awesome.js" crossorigin="anonymous"></script>
+  <!-- CSS for Plugins  -->
+  <link rel="stylesheet" href="assets/css/hover-css/hover.min.css">
+  <link rel="stylesheet" href="assets/css/swiperjs/swiper.custom.css">
+  <link rel="stylesheet" href="assets/css/owljs/owl.carousel.min.css">
+</head>
+
+<body>
+  <!-- Top Nav -->
+  <header class="header header-top">
+    <div class="container">
+      <div class="header__top">
+        
+        <div class="header__contact-container">
+          <a href="#" class="header__contact img">
+            <i class="fa-brands fa-whatsapp fa-xl"></i>
+          </a>
+          <div class="header__contact-text">(+54) 9 11 7688-8890</div>
+          <a href="#" class="header__contact">
+            <i class="fa-regular fa-envelope fa-xl"></i>
+          </a>
+          <div class="header__contact-text">contacto@libconstruct.com</div>
+        </div>
+
+        <div class="header__social">
+          <a href="https://www.facebook.com/LibConstruct" class="header__social-link">
+            <i class="fa-brands fa-square-facebook fa-xl"></i>
+          </a>
+          <a href="https://www.instagram.com/libconstruct" class="header__social-link">
+            <i class="fa-brands fa-instagram fa-xl"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Bottom Nav -->
+  <header class="header header-bottom">
+    <div class="container">
+      <div class="header__bottom">
+        <nav class="header__nav">
+
+          <a href="index.html" class="header__logo">
+            <img src="assets/img/LogoAlt.png" alt="LibConstruct">
+          </a>
+          
+          <div href="#" class="header__nav-dropdown">
+            <i class="fa-solid fa-bars fa-3x header__nav-dropdown-button"></i>
+          </div>
+        
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="index.html" class="header__nav-link">Home</a></li>
+            <li class="header__nav-item"><a href="productos.html" class="header__nav-link-selected">Productos</a></li>
+            <!-- <li class="header__nav-item"><a href="#" class="header__nav-link">Recursos</a></li> -->
+            <li class="header__nav-item"><a href="obras.html" class="header__nav-link">Obras Realizadas</a></li>
+            <li class="header__nav-item"><a href="nosotros.html" class="header__nav-link">Nosotros</a></li>
+            <li class="header__nav-item"><a href="contact-us.html" class="header__nav-link">Contacto</a></li>
+          </ul>
+
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section for Products -->
+  <section class="products-hero">
+    <div class="container">
+      <h1 class="products-hero__title">Nuestros Productos</h1>
+      <p class="products-hero__subtitle">Descubre nuestra amplia variedad de materiales y herramientas de construcción</p>
+    </div>
+  </section>
+
+  <!-- Filters Section -->
+  <section class="products-filters">
+    <div class="container">
+      <div class="filters-container">
+        <h3 class="filters__title">Filtrar por categoría:</h3>
+        <div class="filters-buttons">
+          <button class="filter-btn filter-btn--active" data-filter="todos">
+            <i class="fa-solid fa-th fa-lg"></i> Todos
+          </button>
+          <button class="filter-btn" data-filter="concreto">
+            <i class="fa-solid fa-cubes fa-lg"></i> Concreto
+          </button>
+          <button class="filter-btn" data-filter="herrajes">
+            <i class="fa-solid fa-screwdriver fa-lg"></i> Herrajes
+          </button>
+          <button class="filter-btn" data-filter="ceramica">
+            <i class="fa-solid fa-square fa-lg"></i> Cerámica
+          </button>
+          <button class="filter-btn" data-filter="pinturas">
+            <i class="fa-solid fa-palette fa-lg"></i> Pinturas
+          </button>
+          <button class="filter-btn" data-filter="herramientas">
+            <i class="fa-solid fa-hammer fa-lg"></i> Herramientas
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Grid Section -->
+  <main>
+    <section class="products-section">
+      <div class="container container--lg">
+        <div class="products-grid" id="productsGrid">
+          
+          <!-- Producto 1 -->
+          <div class="product-card" data-category="concreto">
+            <div class="product-card__image-container">
+              <img src="assets/img/products/bloquesConcreto.webp" alt="Cerramiento de concreto" class="product-card__image">
+              <div class="product-card__badge">Oferta</div>
+            </div>
+            <div class="product-card__content">
+              <h5 class="product-card__category">Concreto</h5>
+              <h3 class="product-card__title">Bloques de Concreto</h3>
+              <p class="product-card__description">Bloques de concreto 10x20x40 cm para cerramientos</p>
+              <div class="product-card__price-container">
+                <span class="product-card__price">$8.500</span>
+                <span class="product-card__old-price">$10.000</span>
+              </div>
+              <button class="product-card__btn btn-details" onclick="openProductModal('Bloques de Concreto', 'Concreto', '$8.500', 'Bloques de concreto 10x20x40 cm ideales para cerramientos, muros y divisiones. Excelente calidad y durabilidad. Disponibilidad inmediata.', 'assets/img/products/bloquesConcreto.webp')">
+                <i class="fa-solid fa-eye fa-lg"></i> Ver Detalles
+              </button>
+            </div>
+          </div>
+
+          <!-- Producto 2 -->
+          <div class="product-card" data-category="ceramica">
+            <div class="product-card__image-container">
+              <img src="https://http2.mlstatic.com/D_NQ_NP_2X_883116-MLA97242650449_112025-F.webp" alt="Cerámicos de piso" class="product-card__image">
+            </div>
+            <div class="product-card__content">
+              <h5 class="product-card__category">Cerámica</h5>
+              <h3 class="product-card__title">Cerámicos de Piso 50x50</h3>
+              <p class="product-card__description">Cerámicos premium para pisos interiores y exteriores</p>
+              <div class="product-card__price-container">
+                <span class="product-card__price">$3.200</span>
+              </div>
+              <button class="product-card__btn btn-details" onclick="openProductModal('Cerámicos de Piso 50x50', 'Cerámica', '$3.200', 'Cerámicos de alta calidad 50x50 cm. Resistente a humedad y tránsito frecuente. Variedad de colores disponibles. Perfecto para pisos interiores y exteriores.', 'https://http2.mlstatic.com/D_NQ_NP_2X_883116-MLA97242650449_112025-F.webp')">
+                <i class="fa-solid fa-eye fa-lg"></i> Ver Detalles
+              </button>
+            </div>
+          </div>
+
+          <!-- Producto 3 -->
+          <div class="product-card" data-category="herrajes">
+            <div class="product-card__image-container">
+              <img src="assets/img/products/tornillos.webp" alt="Tornillos galvanizados" class="product-card__image">
+              <div class="product-card__badge">Popular</div>
+            </div>
+            <div class="product-card__content">
+              <h5 class="product-card__category">Herrajes</h5>
+              <h3 class="product-card__title">Tornillos Galvanizados</h3>
+              <p class="product-card__description">Tornillos de acero galvanizado variados</p>
+              <div class="product-card__price-container">
+                <span class="product-card__price">$450</span>
+              </div>
+              <button class="product-card__btn btn-details" onclick='openProductModal("Tornillos Galvanizados", "Herrajes", "$450", "Tornillos de acero galvanizado de alta calidad. Disponibles en diferentes tamaños: 1\", 1.5\", 2\". Resistentes a la corrosión. Presentación por kg.", "assets/img/products/tornillos.webp")'>
+                <i class="fa-solid fa-eye fa-lg"></i> Ver Detalles
+              </button>
+            </div>
+          </div>
+
+          <!-- Producto 4 -->
+          <div class="product-card" data-category="pinturas">
+            <div class="product-card__image-container">
+              <img src="assets/img/products/pintura20lts.webp" alt="Pintura acrílica interior" class="product-card__image">
+            </div>
+            <div class="product-card__content">
+              <h5 class="product-card__category">Pinturas</h5>
+              <h3 class="product-card__title">Pintura Acrílica Interior</h3>
+              <p class="product-card__description">Pintura de alta calidad para interiores</p>
+              <div class="product-card__price-container">
+                <span class="product-card__price">$2.800</span>
+              </div>
+              <button class="product-card__btn btn-details" onclick="openProductModal('Pintura Acrílica Interior', 'Pinturas', '$2.800', 'Pintura acrílica premium para interiores. Acabado mate impecable. Excelente cobertura, bajo olor y secado rápido. Presentación de 20 litros. Variedad de colores en catálogo.', 'assets/img/products/pintura20lts.webp')">
+                <i class="fa-solid fa-eye fa-lg"></i> Ver Detalles
+              </button>
+            </div>
+          </div>
+
+          <!-- Producto 5 -->
+          <div class="product-card" data-category="herramientas">
+            <div class="product-card__image-container">
+              <img src="assets/img/products/taladro20v.webp" alt="Taladro inalámbrico" class="product-card__image">
+              <div class="product-card__badge">Oferta</div>
+            </div>
+            <div class="product-card__content">
+              <h5 class="product-card__category">Herramientas</h5>
+              <h3 class="product-card__title">Taladro Inalámbrico 20V</h3>
+              <p class="product-card__description">Herramienta versátil para múltiples trabajos</p>
+              <div class="product-card__price-container">
+                <span class="product-card__price">$15.900</span>
+                <span class="product-card__old-price">$18.500</span>
+              </div>
+              <button class="product-card__btn btn-details" onclick="openProductModal('Taladro Inalámbrico 20V', 'Herramientas', '$15.900', 'Taladro profesional inalámbrico de 20V. Incluye 2 baterías y cargador. Ideal para perforar, atornillar y trabajos de precisión. Amplia gama de accesorios disponibles.', 'assets/img/products/taladro20v.webp')">
+                <i class="fa-solid fa-eye fa-lg"></i> Ver Detalles
+              </button>
+            </div>
+          </div>
+
+          <!-- Producto 6 -->
+          <div class="product-card" data-category="concreto">
+            <div class="product-card__image-container">
+              <img src="assets/img/products/hormigonPremezcla.webp" alt="Hormigón premezclado" class="product-card__image">
+            </div>
+            <div class="product-card__content">
+              <h5 class="product-card__category">Concreto</h5>
+              <h3 class="product-card__title">Hormigón Premezclado</h3>
+              <p class="product-card__description">Hormigón de calidad para fundaciones y pisos</p>
+              <div class="product-card__price-container">
+                <span class="product-card__price">$650 m³</span>
+              </div>
+              <button class="product-card__btn btn-details" onclick="openProductModal('Hormigón Premezclado', 'Concreto', '$650 m³', 'Hormigón premezclado de alta resistencia. Resistencia a compresión de 25 MPa. Entrega en camión hormigonero. Consulta por volúmenes mínimos y disponibilidad en tu zona.', 'assets/img/products/hormigonPremezcla.webp')">
+                <i class="fa-solid fa-eye fa-lg"></i> Ver Detalles
+              </button>
+            </div>
+          </div>
+
+          <!-- Producto 7 -->
+          <div class="product-card" data-category="ceramica">
+            <div class="product-card__image-container">
+              <img src="assets/img/products/azulejosbano.webp" alt="Azulejos para baño" class="product-card__image">
+              <div class="product-card__badge">Nuevo</div>
+            </div>
+            <div class="product-card__content">
+              <h5 class="product-card__category">Cerámica</h5>
+              <h3 class="product-card__title">Azulejos para Baño 25x35</h3>
+              <p class="product-card__description">Azulejos especiales con acabado brillante</p>
+              <div class="product-card__price-container">
+                <span class="product-card__price">$2.100</span>
+              </div>
+              <button class="product-card__btn btn-details" onclick="openProductModal('Azulejos para Baño 25x35', 'Cerámica', '$2.100', 'Azulejos especiales para baño y cocina. Acabado brillante, impermeable y de fácil limpieza. Tamaño 25x35 cm. Colores variados en stock. Resistentes a humedad y cambios de temperatura.', 'assets/img/products/azulejos.webp')">
+                <i class="fa-solid fa-eye fa-lg"></i> Ver Detalles
+              </button>
+            </div>
+          </div>
+
+          <!-- Producto 8 -->
+          <div class="product-card" data-category="herrajes">
+            <div class="product-card__image-container">
+              <img src="assets/img/products/cañoGalvanizado.jpg" alt="Caños galvanizados" class="product-card__image">
+            </div>
+            <div class="product-card__content">
+              <h5 class="product-card__category">Herrajes</h5>
+              <h3 class="product-card__title">Caños Galvanizados</h3>
+              <p class="product-card__description">Caños de acero galvanizado variadas medidas</p>
+              <div class="product-card__price-container">
+                <span class="product-card__price">$1.200</span>
+              </div>
+              <button class="product-card__btn btn-details" onclick='openProductModal("Caños Galvanizados", "Herrajes", "$1.200", "Caños de acero galvanizado de alta resistencia. Disponibles en diámetros de 1/2\", 3/4\" y 1\". Tratados para prevenir corrosión. Perfecto para instalaciones hidráulicas e industriales.", "assets/img/products/cañoGalvanizado.jpg")'>
+                <i class="fa-solid fa-eye fa-lg"></i> Ver Detalles
+              </button>
+            </div>
+          </div>
+
+          <!-- Producto 9 -->
+          <div class="product-card" data-category="pinturas">
+            <div class="product-card__image-container">
+              <img src="https://via.placeholder.com/400x300" alt="Pintura exterior" class="product-card__image">
+            </div>
+            <div class="product-card__content">
+              <h5 class="product-card__category">Pinturas</h5>
+              <h3 class="product-card__title">Pintura Exterior Impermeable</h3>
+              <p class="product-card__description">Pintura resistente a intemperie</p>
+              <div class="product-card__price-container">
+                <span class="product-card__price">$3.500</span>
+              </div>
+              <button class="product-card__btn btn-details" onclick="openProductModal('Pintura Exterior Impermeable', 'Pinturas', '$3.500', 'Pintura exterior impermeable profesional. Protección contra rayos UV, lluvia y cambios climáticos. Acabado satinado duradero. Presentación de 20 litros. Mayor poder cubritivo.', 'https://via.placeholder.com/400x300')">
+                <i class="fa-solid fa-eye fa-lg"></i> Ver Detalles
+              </button>
+            </div>
+          </div>
+
+          <!-- Producto 10 -->
+          <div class="product-card" data-category="herramientas">
+            <div class="product-card__image-container">
+              <img src="https://via.placeholder.com/400x300" alt="Nivel láser" class="product-card__image">
+            </div>
+            <div class="product-card__content">
+              <h5 class="product-card__category">Herramientas</h5>
+              <h3 class="product-card__title">Nivel Láser Digital</h3>
+              <p class="product-card__description">Herramienta de precisión para nivelación</p>
+              <div class="product-card__price-container">
+                <span class="product-card__price">$4.500</span>
+              </div>
+              <button class="product-card__btn btn-details" onclick="openProductModal('Nivel Láser Digital', 'Herramientas', '$4.500', 'Nivel láser digital con alcance de 50 metros. Precisión de +/- 3mm a 10m. Incluye trípode. Perfecto para trabajos de precisión, construcción y reforma.', 'https://via.placeholder.com/400x300')">
+                <i class="fa-solid fa-eye fa-lg"></i> Ver Detalles
+              </button>
+            </div>
+          </div>
+
+          <!-- Producto 11 -->
+          <div class="product-card" data-category="concreto">
+            <div class="product-card__image-container">
+              <img src="https://via.placeholder.com/400x300" alt="Cemento Portland" class="product-card__image">
+            </div>
+            <div class="product-card__content">
+              <h5 class="product-card__category">Concreto</h5>
+              <h3 class="product-card__title">Cemento Portland 50kg</h3>
+              <p class="product-card__description">Cemento de alta calidad para todo tipo de obras</p>
+              <div class="product-card__price-container">
+                <span class="product-card__price">$850</span>
+              </div>
+              <button class="product-card__btn btn-details" onclick="openProductModal('Cemento Portland 50kg', 'Concreto', '$850', 'Cemento Portland tipo I de alta calidad. Presentación de 50 kg. Ideal para hormigones, revoques y morteros. Fabricación garantizada con las normas IRAM.', 'https://via.placeholder.com/400x300')">
+                <i class="fa-solid fa-eye fa-lg"></i> Ver Detalles
+              </button>
+            </div>
+          </div>
+
+          <!-- Producto 12 -->
+          <div class="product-card" data-category="herramientas">
+            <div class="product-card__image-container">
+              <img src="https://via.placeholder.com/400x300" alt="Set de brocas" class="product-card__image">
+              <div class="product-card__badge">Kit Completo</div>
+            </div>
+            <div class="product-card__content">
+              <h5 class="product-card__category">Herramientas</h5>
+              <h3 class="product-card__title">Set de Brocas 100 Piezas</h3>
+              <p class="product-card__description">Kit completo para trabajos de taladrado</p>
+              <div class="product-card__price-container">
+                <span class="product-card__price">$1.800</span>
+              </div>
+              <button class="product-card__btn btn-details" onclick="openProductModal('Set de Brocas 100 Piezas', 'Herramientas', '$1.800', 'Set profesional de 100 brocas en estuche. Incluye brocas para metal, madera y hormigón. Diferentes tamaños desde 1mm hasta 10mm. Caja organizadora incluida.', 'https://via.placeholder.com/400x300')">
+                <i class="fa-solid fa-eye fa-lg"></i> Ver Detalles
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for Product Details -->
+  <div id="productModal" class="modal" onclick="closeProductModal()">
+    <div class="modal__content" onclick="event.stopPropagation()">
+      <button class="modal__close" onclick="closeProductModal()">
+        <i class="fa-solid fa-xmark fa-2x"></i>
+      </button>
+      
+      <div class="modal__body">
+        <div class="modal__image-container">
+          <img id="modalProductImage" src="" alt="Producto" class="modal__image">
+        </div>
+        
+        <div class="modal__info">
+          <span id="modalProductCategory" class="modal__category"></span>
+          <h2 id="modalProductTitle" class="modal__title"></h2>
+          <p id="modalProductDescription" class="modal__description"></p>
+          
+          <div class="modal__price-container">
+            <h3 id="modalProductPrice" class="modal__price"></h3>
+          </div>
+          
+          <div class="modal__details">
+            <div class="modal__detail-item">
+              <i class="fa-solid fa-check fa-lg" style="color: var(--color-primary);"></i>
+              <span>Stock disponible</span>
+            </div>
+            <div class="modal__detail-item">
+              <i class="fa-solid fa-truck fa-lg" style="color: var(--color-primary);"></i>
+              <span>Envío a domicilio</span>
+            </div>
+            <div class="modal__detail-item">
+              <i class="fa-solid fa-phone fa-lg" style="color: var(--color-primary);"></i>
+              <span>Asesoramiento disponible</span>
+            </div>
+          </div>
+          
+          <div class="modal__actions">
+            <button class="modal__btn modal__btn--primary" onclick="addToCart()">
+              <i class="fa-solid fa-cart-plus fa-lg"></i> Agregar al Carrito
+            </button>
+            <button class="modal__btn modal__btn--secondary" onclick="contactViaMail()">
+              <i class="fa-solid fa-envelope fa-lg"></i> Consultar por Email
+            </button>
+            <button class="modal__btn modal__btn--secondary" onclick="contactViaWhatsapp()">
+              <i class="fa-brands fa-whatsapp fa-lg"></i> Contactar por WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        
+        <div class="footer__company-info">
+          <h2 class="footer__logo">Nuestra sucursal</h2>
+          <p class="footer__address">Calle Zapiola 1420, Libertad, Merlo</p>
+          <p class="footer__phone">(0220) 497-8867</p>
+          <p class="footer__email"><a href="mailto:contacto@libconstruct.com">contacto@libconstruct.com</a></p>
+        </div>
+        
+        <div class="footer__links">
+          <h3 class="footer__heading">Links</h3>
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a href="index.html">Home</a></li>
+            <li class="footer__menu-item"><a href="productos.html">Productos</a></li>
+            <li class="footer__menu-item"><a href="#" class="header__nav-link">Ventas</a></li>
+            <li class="footer__menu-item"><a href="contact-us.html">Contacto</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__social">
+          <h3 class="footer__heading">Seguinos</h3>
+          <ul class="footer__social-menu">
+            <li class="footer__social-menu-item"><a href="https://www.facebook.com/LibConstruct">Facebook</a></li>
+            <li class="footer__social-menu-item"><a href="https://www.instagram.com/libconstruct">Instagram</a></li>
+            <li class="footer__social-menu-item"><a href="https://www.twitter.com/LibConstruct">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2023 LibConstruct. Todos los derechos reservados.</p>
+        <ul class="footer__legal">
+          <li class="footer__legal-item"><a href="#">Política de privacidad</a></li>
+          <li class="footer__legal-item"><a href="#">Terminos de Servicio</a></li>
+          <li class="footer__legal-item"><a href="#">Accesibilidad</a></li>
+        </ul>
+      
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/header.dropdown.js"></script>
+  <script src="assets/js/productos.js"></script>
+</body>
+
+</html>
