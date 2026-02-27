@@ -1,4 +1,4 @@
-// JavaScript for Obras Realizadas page
+// JavaScript for works Realizadas page
 let currentWork = {};
 
 function openWorkModal(title, description, image) {

@@ -108,15 +108,15 @@ body {
 }
 
 .swiper-slide__image1 {
-    background-image: url("../../img/carrousel1-small.jpg");
+    background-image: url("../../img/carrousel/carrousel1-small.jpg");
 }
   
 .swiper-slide__image2 {
-    background-image: url("../../img/carrousel4-small.jpg");
+    background-image: url("../../img/carrousel/carrousel4-small.jpg");
 }
   
 .swiper-slide__image3 {
-    background-image: url("../../img/carrousel3-small.jpg");
+    background-image: url("../../img/carrousel/carrousel3-small.jpg");
 }
 
 /* Bigger than 360 */

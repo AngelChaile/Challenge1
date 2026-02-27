@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Obras Realizadas - LibConstruct</title>
+  <title>Obras - LibConstruct</title>
   <!-- General Metas  -->
   <meta name="application-name" content="LibConstruct">
-  <meta name="description" content="Proyectos y obras realizadas por LibConstruct">
+  <meta name="description" content="Proyectos y works realizadas por LibConstruct">
   <meta name="author" content="ISFT 177">
-  <meta name="keywords" content="Construccion, obras, proyectos, corralon, realizado">
+  <meta name="keywords" content="Construccion, works, proyectos, corralon, realizado">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <!-- Icon -->
@@ -63,15 +63,15 @@
             <img src="assets/img/LogoAlt.png" alt="LibConstruct">
           </a>
           
-          <div href="#" class="header__nav-dropdown">
-            <i class="fa-solid fa-bars fa-3x header__nav-dropdown-button"></i>
-          </div>
+          <button class="header__nav-dropdown" aria-label="Abrir menú" aria-expanded="false">
+            <i class="fa-solid fa-bars header__nav-dropdown-button" aria-hidden="true"></i>
+          </button>
         
           <ul class="header__nav-list">
             <li class="header__nav-item"><a href="index.html" class="header__nav-link">Home</a></li>
-            <li class="header__nav-item"><a href="productos.html" class="header__nav-link">Productos</a></li>
-            <li class="header__nav-item"><a href="obras.html" class="header__nav-link-selected">Obras Realizadas</a></li>
-            <li class="header__nav-item"><a href="nosotros.html" class="header__nav-link">Nosotros</a></li>
+            <li class="header__nav-item"><a href="products.html" class="header__nav-link">Productos</a></li>
+            <li class="header__nav-item"><a href="works.html" class="header__nav-link-selected">Obras Realizadas</a></li>
+            <li class="header__nav-item"><a href="about-us.html" class="header__nav-link">Nosotros</a></li>
             <li class="header__nav-item"><a href="contact-us.html" class="header__nav-link">Contacto</a></li>
           </ul>
 
@@ -83,7 +83,7 @@
   <!-- Hero Section for Projects -->
   <section class="works-hero">
     <div class="container">
-      <h1 class="works-hero__title">Obras Realizadas</h1>
+      <h1 class="works-hero__title">works Realizadas</h1>
       <p class="works-hero__subtitle">Algunos de nuestros proyectos finalizados</p>
     </div>
   </section>
@@ -97,72 +97,72 @@
           <!-- Obra 1 -->
           <div class="work-card">
             <div class="work-card__img-container">
-              <img src="https://via.placeholder.com/600x400" alt="Edificio Residencial Alfa" class="work-card__image">
+              <img src="assets/img/works/Edificio5pisos.jpg" alt="Edificio Residencial Alfa" class="work-card__image">
             </div>
             <div class="work-card__content">
               <h3 class="work-card__title">Edificio Residencial Alfa</h3>
               <p class="work-card__description">Construcción completa de edificio de 5 pisos en Merlo.</p>
-              <button class="work-card__btn" onclick="openWorkModal('Edificio Residencial Alfa', 'Construcción completa de edificio de 5 pisos en Merlo.', 'https://via.placeholder.com/600x400')">Ver Más</button>
+              <button class="work-card__btn" onclick="openWorkModal('Edificio Residencial Alfa', 'Construcción completa de edificio de 5 pisos en Merlo.', 'assets/img/works/Edificio5pisos.jpg')">Ver Más</button>
             </div>
           </div>
 
           <!-- Obra 2 -->
           <div class="work-card">
             <div class="work-card__img-container">
-              <img src="https://via.placeholder.com/600x400" alt="Casa Familia López" class="work-card__image">
+              <img src="assets/img/works/CasaFamiliaLopez.jpg" alt="Casa Familia López" class="work-card__image">
             </div>
             <div class="work-card__content">
               <h3 class="work-card__title">Casa Familia López</h3>
               <p class="work-card__description">Refacción y ampliación de vivienda unifamiliar.</p>
-              <button class="work-card__btn" onclick="openWorkModal('Casa Familia López', 'Refacción y ampliación de vivienda unifamiliar.', 'https://via.placeholder.com/600x400')">Ver Más</button>
+              <button class="work-card__btn" onclick="openWorkModal('Casa Familia López', 'Refacción y ampliación de vivienda unifamiliar.', 'assets/img/works/CasaFamiliaLopez.jpg')">Ver Más</button>
             </div>
           </div>
 
           <!-- Obra 3 -->
           <div class="work-card">
             <div class="work-card__img-container">
-              <img src="https://via.placeholder.com/600x400" alt="Parque Industrial Omega" class="work-card__image">
+              <img src="assets/img/works/ParqueIndustrial.jpg" alt="Parque Industrial Omega" class="work-card__image">
             </div>
             <div class="work-card__content">
               <h3 class="work-card__title">Parque Industrial Omega</h3>
               <p class="work-card__description">Construcción de naves industriales y explanadas.</p>
-              <button class="work-card__btn" onclick="openWorkModal('Parque Industrial Omega', 'Construcción de naves industriales y explanadas.', 'https://via.placeholder.com/600x400')">Ver Más</button>
+              <button class="work-card__btn" onclick="openWorkModal('Parque Industrial Omega', 'Construcción de naves industriales y explanadas.', 'assets/img/works/ParqueIndustrial2.jpg')">Ver Más</button>
             </div>
           </div>
 
           <!-- Obra 4 -->
           <div class="work-card">
             <div class="work-card__img-container">
-              <img src="https://via.placeholder.com/600x400" alt="Local Comercial Beta" class="work-card__image">
+              <img src="assets/img/works/localComercial.jpg" alt="Local Comercial Beta" class="work-card__image">
             </div>
             <div class="work-card__content">
               <h3 class="work-card__title">Local Comercial Beta</h3>
               <p class="work-card__description">Reforma integral para apertura de local comercial.</p>
-              <button class="work-card__btn" onclick="openWorkModal('Local Comercial Beta', 'Reforma integral para apertura de local comercial.', 'https://via.placeholder.com/600x400')">Ver Más</button>
+              <button class="work-card__btn" onclick="openWorkModal('Local Comercial Beta', 'Reforma integral para apertura de local comercial.', 'assets/img/works/localComercial2.jpg')">Ver Más</button>
             </div>
           </div>
 
           <!-- Obra 5 -->
           <div class="work-card">
             <div class="work-card__img-container">
-              <img src="https://via.placeholder.com/600x400" alt="Escuela Primaria 123" class="work-card__image">
+              <img src="assets/img/works/EscuelaPrimaria.jpg" alt="Escuela Primaria 123" class="work-card__image">
             </div>
             <div class="work-card__content">
               <h3 class="work-card__title">Escuela Primaria 123</h3>
               <p class="work-card__description">Ampliación de aulas y mejoras de infraestructura.</p>
-              <button class="work-card__btn" onclick="openWorkModal('Escuela Primaria 123', 'Ampliación de aulas y mejoras de infraestructura.', 'https://via.placeholder.com/600x400')">Ver Más</button>
+              <button class="work-card__btn" onclick="openWorkModal('Escuela Primaria 123', 'Ampliación de aulas y mejoras de infraestructura.', 'assets/img/works/EscuelaPrimaria2.jpg')">Ver Más</button>
             </div>
           </div>
 
           <!-- Obra 6 -->
           <div class="work-card">
             <div class="work-card__img-container">
-              <img src="https://via.placeholder.com/600x400" alt="Plaza Central Delta" class="work-card__image">
+              <img src="assets/img/works/plaza.jpg" alt="Plaza Central Delta" class="work-card__image">
             </div>
             <div class="work-card__content">
               <h3 class="work-card__title">Plaza Central Delta</h3>
               <p class="work-card__description">Remodelación de plaza con pavimento y mobiliario urbano.</p>
-              <button class="work-card__btn" onclick="openWorkModal('Plaza Central Delta', 'Remodelación de plaza con pavimento y mobiliario urbano.', 'https://via.placeholder.com/600x400')">Ver Más</button>
+              <button class="work-card__btn" onclick="openWorkModal('Plaza Central Delta', 'Remodelación de plaza con pavimento y mobiliario urbano.', 'assets/img/works/plaza2.webp')">Ver Más</button>
             </div>
           </div>
 
@@ -203,8 +203,8 @@
           <h3 class="footer__heading">Links</h3>
           <ul class="footer__menu">
             <li class="footer__menu-item"><a href="index.html">Home</a></li>
-            <li class="footer__menu-item"><a href="productos.html">Productos</a></li>
-            <li class="footer__menu-item"><a href="obras.html">Obras Realizadas</a></li>
+            <li class="footer__menu-item"><a href="products.html">Productos</a></li>
+            <li class="footer__menu-item"><a href="works.html">Obras Realizadas</a></li>
             <li class="footer__menu-item"><a href="contact-us.html">Contacto</a></li>
           </ul>
         </div>
@@ -233,6 +233,6 @@
 
   <!-- Scripts -->
   <script src="assets/js/header.dropdown.js"></script>
-  <script src="assets/js/obras.js"></script>
+  <script src="assets/js/works.js"></script>
 </body>
 </html>

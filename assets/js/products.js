@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       const selectedFilter = this.getAttribute('data-filter');
 
-      // Filtrar productos
+      // Filtrar products
       productCards.forEach(card => {
         if (selectedFilter === 'todos') {
           card.style.display = 'block';

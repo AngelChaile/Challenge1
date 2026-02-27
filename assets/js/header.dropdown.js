@@ -1,39 +1,40 @@
 const navListClass = document.querySelector('.header__nav-list');
-const dropdownButton = document.querySelector('.header__nav-dropdown-button');
+const dropdownButton = document.querySelector('.header__nav-dropdown');
+const dropdownIcon = dropdownButton.querySelector('.header__nav-dropdown-button');
 const mobileMediaQuery = window.matchMedia('(max-width: 600px)');
 
-var toggleFlag = 0;
+let menuOpen = false;
 
-/**
- * Toggles the 'header__nav-list-show' class on the navList if the mediaQuery increases
- * more than 600px and resets toggleFlag changes to 1.
- * 
- * @param navList Class of the navbar that contains redirect links
- */
-
-mobileMediaQuery.addEventListener('change', function resetMobileDropdown() 
-{
-  if (!mobileMediaQuery.matches) 
-  {
-    if(toggleFlag == 1) 
-    {
-      navListClass.classList.toggle('header__nav-list-show');
-      toggleFlag--;
-    }
+// reset mobile dropdown when widening beyond breakpoint
+mobileMediaQuery.addEventListener('change', function resetMobileDropdown() {
+  if (!mobileMediaQuery.matches && menuOpen) {
+    navListClass.classList.remove('header__nav-list-show');
+    dropdownIcon.classList.remove('fa-xmark');
+    dropdownIcon.classList.add('fa-bars');
+    dropdownButton.setAttribute('aria-expanded', 'false');
+    menuOpen = false;
   }
 });
 
-/**
- * Changes the visibility of the mobile menu and updates the toggleFlag variable.
- * 
- * @param navList Class of the navbar that contains redirect links
- */
-dropdownButton.addEventListener('click', function toggleMobileDropdown() 
-{
+// toggle mobile menu and swap icon
+function toggleMobileDropdown() {
   navListClass.classList.toggle('header__nav-list-show');
+  menuOpen = !menuOpen;
 
-  (toggleFlag == 0) ? toggleFlag++ : toggleFlag--;
+  if (menuOpen) {
+    dropdownIcon.classList.remove('fa-bars');
+    dropdownIcon.classList.add('fa-xmark');
+    dropdownButton.setAttribute('aria-label', 'Cerrar menú');
+    dropdownButton.setAttribute('aria-expanded', 'true');
+  } else {
+    dropdownIcon.classList.remove('fa-xmark');
+    dropdownIcon.classList.add('fa-bars');
+    dropdownButton.setAttribute('aria-label', 'Abrir menú');
+    dropdownButton.setAttribute('aria-expanded', 'false');
+  }
+}
 
-});
+dropdownButton.addEventListener('click', toggleMobileDropdown);
+
 
 

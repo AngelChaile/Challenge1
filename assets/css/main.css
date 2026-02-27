@@ -210,12 +210,19 @@
   .header__nav-dropdown {
     color: var(--color-icon-black);
     display: none;
+    background: none;
+    border: none;
+    padding: 0;
   }
   
   .header__nav-dropdown-button {
-    margin-top: auto;
-    margin-bottom: bottom;
-    justify-content: flex-end;
+    /* no extra margins by default */
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .header__nav-dropdown-button:hover {
+    color: var(--color-primary);
   }
   
   .header__nav {
@@ -231,8 +238,9 @@
     padding: 0;
   }
 
+  /* toggle class used in mobile; flex keeps list visible on desktop too */
   .header__nav-list-show {
-    display: block !important;
+    display: flex !important;
   }
   
   .header__nav-item {
@@ -584,28 +592,54 @@
       padding-bottom: 2%;
     } 
     .header__logo {
-      max-width: 90%;
-      text-align: right;
-      margin-left: auto;
-      margin-right: auto;
+      max-width: 50%;
+      text-align: left;
+      margin: 0;
     }
 
+    /* switch to flex for horizontal alignment */
     .header__nav {
-      display: grid;
-    }
-
-    .header__nav-list {
-      padding-top: unset;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    position: relative; /* for absolute child dropdown */
       padding-bottom: unset;
+      /* mobile menu will stack vertically */
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--color-bg-white);
+      flex-direction: column;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transform: translateY(-10px);
+      opacity: 0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
     .header__nav-dropdown {
-      display: table;
+      display: block;
       text-align: center;
+      cursor: pointer;
+      padding: 0.5rem;
+      margin-left: auto; /* push to right in flex container */
     }
 
-    .header__nav-list {
-      display: none;
+    .header__nav-dropdown-button {
+      font-size: 1.8rem; /* smaller for mobile */
+    }
+
+    /* show list when toggled */
+    .header__nav-list-show {
+      display: flex !important;
+      transform: translateY(0);
+      opacity: 1 !important;
+    }
+
+    .header__nav-item {
+      width: 100%;
+      padding: 1rem 0;
     }
   }
 
@@ -992,7 +1026,7 @@
   .form__button:hover {
     background-color: #0062cc;
   }
-  /* PRODUCTOS PAGE STYLES */
+  /* products PAGE STYLES */
 
   /* Products Hero Section */
   .products-hero {
